@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output and coverage reports
+build/
+dist/
+coverage/
+
+# Local environment files and secrets
+.env*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Generated caches
+.cache/
+.gmp_cache/
+.turbo/
+.vite/
+
+# Local database backups
+*.db-journal
+*.sqlite-journal
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# TypeScript build artifacts
+*.tsbuildinfo
+
+# Generated server bundle
+/server.js

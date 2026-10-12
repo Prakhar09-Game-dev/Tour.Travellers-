@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  /* Varanasi Ganga Horizon Theme (Sunrise/Sunset over Holy River Ganga) */
+  --color-horizon-amber: #D9531E;
+  --color-horizon-gold: #F59E0B;
+  --color-horizon-sun: #FF6A00;
+  --color-horizon-dusk: #7C2D12;
+  --color-horizon-radiance: #FDE047;
+  
+  --color-ganga-deep: #0F172A;
+  --color-ganga-water: #1E3A5F;
+  --color-ganga-river: #0E7490;
+  --color-ganga-ripple: #38BDF8;
+  --color-ganga-foam: #E0F2FE;
+  
+  /* Ujjawal Tour & Travels Brand Colors (Varanasi Heritage Identity) */
+  --color-primary-crimson: #821B25;
+  --color-primary-firered: #B5222A;
+  --color-warm-ivory: #FFF9F0;
+  --color-sand-beige: #F3E8D5;
+  --color-antique-gold: #C69A52;
+  --color-charcoal: #292321;
+
+  --color-dawn-ivory: #FFF9F0;
+  --color-sandstone: #C69A52;
+  --color-ghat-stone: #F3E8D5;
+  --color-warm-bg: #FFF9F0;
+  
+  --color-firered: #B5222A;
+  --color-crimson: #821B25;
+  --color-vermilion: #B5222A;
+  --color-terracotta: #821B25;
+  --color-warmbeige: #F3E8D5;
+  --color-sandbeige: #F3E8D5;
+  --color-ivory: #FFF9F0;
+  --color-antiquegold: #C69A52;
+  --color-charcoal-text: #292321;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-warm-bg);
+  color: var(--color-charcoal);
+  overflow-x: hidden;
+}
+
+.font-heritage {
+  font-family: var(--font-serif);
+}
+
+/* Custom subtle scrollbar with horizon theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8ECD5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9531E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6A00;
+}
+
+/* Water & Ganga Ripple Animations */
+@keyframes gangaWaveSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes gangaSunGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(217, 83, 30, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.7), 0 0 60px rgba(255, 106, 0, 0.35);
+  }
+}
+
+@keyframes waterPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+
+@keyframes gentleUndulation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-wave-slide {
+  animation: gangaWaveSlide 14s linear infinite;
+}
+
+.animate-sun-glow {
+  animation: gangaSunGlow 3.5s ease-in-out infinite;
+}
+
+.animate-undulate {
+  animation: gentleUndulation 4s ease-in-out infinite;
+}
+
+/* The Sun & River Ganga Button Theme */
+.btn-ganga-sun {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #FF6A00 0%, #F59E0B 50%, #D9531E 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(217, 83, 30, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-ganga-sun:hover {
+  background: linear-gradient(135deg, #FF7A1A 0%, #FBBF24 50%, #EA580C 100%);
+  box-shadow: 0 6px 20px rgba(217, 83, 30, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+.btn-ganga-sun:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 2px 8px rgba(217, 83, 30, 0.4);
+}
+
+/* Shimmer ripple on buttons */
+.btn-ganga-sun::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.5s;
+  pointer-events: none;
+}
+
+.btn-ganga-sun:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Horizon gradient backgrounds */
+.bg-horizon-gradient {
+  background: linear-gradient(180deg, #7C2D12 0%, #D9531E 40%, #F59E0B 75%, #F8ECD5 100%);
+}
+
+.bg-horizon-dusk {
+  background: linear-gradient(135deg, #431407 0%, #7C2D12 50%, #9A3412 100%);
+}
+
+.bg-ganga-twilight {
+  background: linear-gradient(180deg, #0F172A 0%, #1E3A5F 50%, #0E7490 100%);
+}
+
+/* Accessibility: Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

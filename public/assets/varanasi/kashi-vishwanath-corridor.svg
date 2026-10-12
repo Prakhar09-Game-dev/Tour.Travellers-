@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kashiSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D0C11" />
+      <stop offset="35%" stop-color="#6B141C" />
+      <stop offset="70%" stop-color="#B5222A" />
+      <stop offset="100%" stop-color="#E8D5B5" />
+    </linearGradient>
+    <radialGradient id="goldenSpireAura" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="0.9" />
+      <stop offset="25%" stop-color="#FDE047" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#D97706" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#B5222A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="25%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="75%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="corridorStone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B5" />
+      <stop offset="50%" stop-color="#D4B996" />
+      <stop offset="100%" stop-color="#A94F3D" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#kashiSky)" />
+  <circle cx="600" cy="220" r="320" fill="url(#goldenSpireAura)" />
+
+  <!-- Sacred River Ganga at base of corridor -->
+  <rect x="0" y="560" width="1200" height="115" fill="#1C1014" />
+  <ellipse cx="600" cy="590" rx="360" ry="14" fill="#F59E0B" opacity="0.3" filter="blur(6px)" />
+  <ellipse cx="600" cy="620" rx="280" ry="10" fill="#FEF08A" opacity="0.25" filter="blur(4px)" />
+
+  <!-- Grand Corridor Stone Pavilions & Pillars (Left & Right) -->
+  <g fill="url(#corridorStone)">
+    <!-- Left Corridor Wing -->
+    <rect x="60" y="380" width="380" height="180" />
+    <polygon points="40,380 460,380 440,340 60,340" />
+    <!-- Pillars Left -->
+    <rect x="80" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="140" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="200" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="260" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="320" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="380" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+
+    <!-- Right Corridor Wing -->
+    <rect x="760" y="380" width="380" height="180" />
+    <polygon points="740,380 1160,380 1140,340 760,340" />
+    <!-- Pillars Right -->
+    <rect x="780" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="840" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="900" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="960" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="1020" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+    <rect x="1080" y="380" width="22" height="180" fill="#821B25" opacity="0.6" />
+  </g>
+
+  <!-- Central Sanctum & Main Temple Base (Garbhagriha) -->
+  <polygon points="400,560 800,560 770,380 430,380" fill="#A94F3D" stroke="#C69A52" stroke-width="2" />
+  <rect x="450" y="380" width="300" height="30" fill="url(#corridorStone)" />
+
+  <!-- Iconic Kashi Vishwanath Golden Shikhara (Golden Spire) -->
+  <g id="goldenShikhara">
+    <!-- Tower Body Tier 1 -->
+    <polygon points="460,380 740,380 720,290 480,290" fill="url(#goldPlate)" stroke="#B45309" stroke-width="2" />
+    <!-- Tower Body Tier 2 -->
+    <polygon points="485,290 715,290 690,200 510,200" fill="url(#goldPlate)" stroke="#B45309" stroke-width="2" />
+    <!-- Tower Body Tier 3 (Pyramidal Steps) -->
+    <polygon points="515,200 685,200 660,130 540,130" fill="url(#goldPlate)" stroke="#B45309" stroke-width="2" />
+
+    <!-- Amalaka (Ribbed Crown Stone) -->
+    <ellipse cx="600" cy="120" rx="60" ry="18" fill="url(#goldPlate)" stroke="#78350F" stroke-width="2" />
+    <ellipse cx="600" cy="116" rx="48" ry="12" fill="#FEF08A" />
+
+    <!-- Sacred Golden Kalash & Pinnacle -->
+    <ellipse cx="600" cy="100" rx="22" ry="16" fill="url(#goldPlate)" stroke="#78350F" stroke-width="1.5" />
+    <polygon points="590,92 610,92 600,65" fill="url(#goldPlate)" />
+    
+    <!-- Sacred Saffron Flag (Dhwaja) Billowing in Wind -->
+    <polygon points="600,65 655,78 600,92" fill="#F97316" stroke="#C2410C" stroke-width="1.5" />
+
+    <!-- Sacred Golden Trishul (Trident) at Pinnacle -->
+    <line x1="600" y1="90" x2="600" y2="40" stroke="#FDE047" stroke-width="3.5" />
+    <path d="M 590 52 Q 600 60 610 52 L 610 44 Q 600 50 590 44 Z" fill="#FDE047" stroke="#B45309" stroke-width="1" />
+  </g>
+
+  <!-- Small Subsidiary Golden Spire (Silver/Gold domes) -->
+  <polygon points="410,380 470,380 455,270 425,270" fill="url(#goldPlate)" stroke="#B45309" stroke-width="1.5" />
+  <ellipse cx="440" cy="265" rx="16" ry="6" fill="url(#goldPlate)" />
+  <line x1="440" y1="265" x2="440" y2="245" stroke="#FDE047" stroke-width="2" />
+
+  <polygon points="730,380 790,380 775,270 745,270" fill="url(#goldPlate)" stroke="#B45309" stroke-width="1.5" />
+  <ellipse cx="760" cy="265" rx="16" ry="6" fill="url(#goldPlate)" />
+  <line x1="760" y1="265" x2="760" y2="245" stroke="#FDE047" stroke-width="2" />
+
+  <!-- Temple Gateway & Devotees -->
+  <polygon points="540,560 660,560 660,450 540,450" fill="#292321" />
+  <path d="M 540 450 Q 600 410 660 450" fill="#292321" />
+  <ellipse cx="600" cy="500" rx="30" ry="40" fill="#FEF08A" opacity="0.4" filter="blur(8px)" />
+
+  <!-- Devotees in Silhouette -->
+  <g fill="#1F1519">
+    <ellipse cx="570" cy="548" rx="7" ry="14" />
+    <circle cx="570" cy="530" r="5" />
+    <ellipse cx="600" cy="546" rx="8" ry="15" />
+    <circle cx="600" cy="528" r="5.5" />
+    <ellipse cx="630" cy="549" rx="7" ry="13" />
+    <circle cx="630" cy="532" r="5" />
+  </g>
+
+  <!-- Heritage Banner Title Overlay -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="460" height="42" rx="6" fill="#821B25" opacity="0.95" />
+    <rect x="2" y="2" width="456" height="38" rx="4" fill="none" stroke="#C69A52" stroke-width="1.2" />
+    <text x="230" y="26" font-family="'Cinzel', Georgia, serif" font-size="16" font-weight="700" fill="#FFF9F0" text-anchor="middle" letter-spacing="2">
+      SHRI KASHI VISHWANATH CORRIDOR
+    </text>
+  </g>
+</svg>

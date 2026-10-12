@@ -1,0 +1,111 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675' width='100%' height='100%'>
+  <defs>
+    <linearGradient id='twilightSky' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#1E112A' />
+      <stop offset='45%' stop-color='#4A1525' />
+      <stop offset='75%' stop-color='#821B25' />
+      <stop offset='100%' stop-color='#B5222A' />
+    </linearGradient>
+    <radialGradient id='sacredAartiGlow' cx='50%' cy='65%' r='40%'>
+      <stop offset='0%' stop-color='#FEF08A' stop-opacity='0.9' />
+      <stop offset='30%' stop-color='#F59E0B' stop-opacity='0.7' />
+      <stop offset='70%' stop-color='#D74332' stop-opacity='0.3' />
+      <stop offset='100%' stop-color='#821B25' stop-opacity='0' />
+    </radialGradient>
+    <linearGradient id='gangaRiver' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#2A101A' />
+      <stop offset='50%' stop-color='#19101E' />
+      <stop offset='100%' stop-color='#0F0B13' />
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='675' fill='url(#twilightSky)' />
+  
+  <!-- Temple & Ghat Architecture Silhouettes -->
+  <path d='M0 450 L60 450 L75 320 L90 450 L220 450 L240 280 L260 450 L420 450 L440 340 L460 450 L680 450 L700 290 L720 450 L950 450 L970 310 L990 450 L1200 450 L1200 675 L0 675 Z' fill='#170C15' />
+  
+  <!-- Massive Grand Aarti Golden Aura Glow -->
+  <circle cx='600' cy='430' r='380' fill='url(#sacredAartiGlow)' />
+  
+  <!-- Dashashwamedh Ghat Stepped Stones -->
+  <path d='M0 480 L1200 480 L1200 495 L0 495 Z' fill='#24121B' />
+  <path d='M0 500 L1200 500 L1200 518 L0 518 Z' fill='#1D0E16' />
+  <path d='M0 522 L1200 522 L1200 545 L0 545 Z' fill='#160A10' />
+  
+  <!-- Sacred Ganga River with Golden Light Reflections -->
+  <rect x='0' y='535' width='1200' height='140' fill='url(#gangaRiver)' />
+  <!-- Water Shimmer Lines -->
+  <ellipse cx='600' cy='560' rx='280' ry='12' fill='#F59E0B' opacity='0.35' filter='blur(4px)' />
+  <ellipse cx='600' cy='590' rx='210' ry='10' fill='#D74332' opacity='0.4' filter='blur(5px)' />
+  <ellipse cx='600' cy='625' rx='140' ry='8' fill='#FEF08A' opacity='0.3' filter='blur(4px)' />
+  
+  <!-- Devotees Wooden Boats on Ganga -->
+  <g transform='translate(200, 560)'>
+    <path d='M0 20 Q50 32 120 20 L110 8 L10 8 Z' fill='#0B070D' />
+    <circle cx='40' cy='4' r='6' fill='#0B070D' />
+    <circle cx='60' cy='3' r='6' fill='#0B070D' />
+    <circle cx='80' cy='5' r='6' fill='#0B070D' />
+  </g>
+  <g transform='translate(880, 570)'>
+    <path d='M0 18 Q40 28 100 18 L90 7 L8 7 Z' fill='#0B070D' />
+    <circle cx='30' cy='4' r='5' fill='#0B070D' />
+    <circle cx='50' cy='3' r='5' fill='#0B070D' />
+  </g>
+  
+  <!-- Floating Diyas with Marigold Petals -->
+  <circle cx='520' cy='580' r='5' fill='#FEF08A' filter='blur(1px)' />
+  <circle cx='670' cy='610' r='6' fill='#FEF08A' filter='blur(1px)' />
+  <circle cx='430' cy='630' r='4' fill='#F59E0B' />
+  <circle cx='760' cy='590' r='5' fill='#F59E0B' />
+
+  <!-- Seven Aarti Priests on Dashashwamedh Pedestals -->
+  <g id='priestsGroup'>
+    <!-- Center Priest (Main) -->
+    <g transform='translate(600, 390)'>
+      <!-- Priest Platform / Chowki -->
+      <polygon points='-45,70 45,70 38,55 -38,55' fill='#C69A52' />
+      <!-- Robes / Dhoti -->
+      <path d='M -18 55 Q 0 25 0 -15 Q 0 25 18 55 Z' fill='#FFF9F0' />
+      <!-- Stole Saffron Angavastram -->
+      <path d='M -12 -15 Q -18 20 -15 45 Q -8 46 -6 20 Z' fill='#F59E0B' />
+      <!-- Torso & Head -->
+      <rect x='-8' y='-40' width='16' height='26' rx='3' fill='#FBBF24' />
+      <circle cx='0' cy='-54' r='10' fill='#FBBF24' />
+      <!-- Arms Raised Holding Deepam -->
+      <path d='M -8 -30 L -18 -68 L -4 -68 L 0 -30 Z' fill='#FBBF24' />
+      <path d='M 8 -30 L 18 -68 L 4 -68 L 0 -30 Z' fill='#FBBF24' />
+      <!-- Multi-Tiered Brass Aarti Lamp -->
+      <polygon points='-28,-72 28,-72 20,-88 -20,-88' fill='#C69A52' stroke='#FEF08A' stroke-width='1.5' />
+      <polygon points='-18,-90 18,-90 12,-104 -12,-104' fill='#C69A52' stroke='#FEF08A' stroke-width='1.5' />
+      <polygon points='-10,-106 10,-106 6,-118 -6,-118' fill='#C69A52' stroke='#FEF08A' stroke-width='1.5' />
+      <!-- Sacred Aarti Flames -->
+      <ellipse cx='0' cy='-126' rx='8' ry='16' fill='#FEF08A' filter='blur(1px)' />
+      <ellipse cx='0' cy='-128' rx='5' ry='12' fill='#FFFFFF' />
+      <ellipse cx='-16' cy='-94' rx='4' ry='8' fill='#FEF08A' />
+      <ellipse cx='16' cy='-94' rx='4' ry='8' fill='#FEF08A' />
+      <ellipse cx='-24' cy='-76' rx='5' ry='9' fill='#FEF08A' />
+      <ellipse cx='24' cy='-76' rx='5' ry='9' fill='#FEF08A' />
+    </g>
+
+    <!-- Flanking Priest Left -->
+    <g transform='translate(450, 400)'>
+      <polygon points='-35,60 35,60 30,48 -30,48' fill='#C69A52' />
+      <path d='M -14 48 Q 0 20 0 -10 Q 0 20 14 48 Z' fill='#FFF9F0' />
+      <circle cx='0' cy='-45' r='8' fill='#FBBF24' />
+      <polygon points='-20,-60 20,-60 14,-74 -14,-74' fill='#C69A52' />
+      <ellipse cx='0' cy='-85' rx='6' ry='12' fill='#FEF08A' filter='blur(1px)' />
+    </g>
+
+    <!-- Flanking Priest Right -->
+    <g transform='translate(750, 400)'>
+      <polygon points='-35,60 35,60 30,48 -30,48' fill='#C69A52' />
+      <path d='M -14 48 Q 0 20 0 -10 Q 0 20 14 48 Z' fill='#FFF9F0' />
+      <circle cx='0' cy='-45' r='8' fill='#FBBF24' />
+      <polygon points='-20,-60 20,-60 14,-74 -14,-74' fill='#C69A52' />
+      <ellipse cx='0' cy='-85' rx='6' ry='12' fill='#FEF08A' filter='blur(1px)' />
+    </g>
+  </g>
+
+  <!-- Incense Smoke Billowing -->
+  <path d='M580 320 Q620 250 590 180 Q640 120 620 60' stroke='#FFF9F0' stroke-width='4' fill='none' opacity='0.25' filter='blur(4px)' />
+  <path d='M620 320 Q580 240 610 170 Q570 110 590 50' stroke='#FEF08A' stroke-width='3' fill='none' opacity='0.2' filter='blur(4px)' />
+</svg>

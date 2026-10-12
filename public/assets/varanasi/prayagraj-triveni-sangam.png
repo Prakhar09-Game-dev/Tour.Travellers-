@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sangamSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="85%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#FEF08A" />
+    </linearGradient>
+    <!-- Deep Greenish-Blue Yamuna Water -->
+    <linearGradient id="yamunaWater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E" />
+      <stop offset="60%" stop-color="#0E7490" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <!-- Silt-Rich Golden Pale Ganga Water -->
+    <linearGradient id="gangaWater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CA8A04" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#FEF08A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#sangamSky)" />
+
+  <!-- Sacred Confluence Waters: Confluence Line dividing Yamuna and Ganga -->
+  <!-- Left Side: Deep Blue-Green Yamuna -->
+  <path d="M 0 350 Q 300 370 560 480 L 0 675 Z" fill="url(#yamunaWater)" />
+  <!-- Right Side: Sacred Pale Silt Ganga -->
+  <path d="M 0 350 Q 550 360 1200 350 L 1200 675 L 0 675 Z" fill="url(#gangaWater)" opacity="0.85" />
+  <!-- Confluence Swirl Center Point -->
+  <ellipse cx="600" cy="510" rx="340" ry="60" fill="#0284C7" opacity="0.35" filter="blur(10px)" />
+
+  <!-- Iconic Wooden Pilgrimage Boats at the Sangam Confluence -->
+  <g transform="translate(480, 460)">
+    <!-- Main Boat -->
+    <path d="M -90 30 Q 0 55 120 30 L 105 10 L -75 10 Z" fill="#78350F" stroke="#451A03" stroke-width="2" />
+    <!-- Saffron & Red Boat Canopy -->
+    <polygon points="-50,10 80,10 65,-25 -35,-25" fill="#EA580C" />
+    <line x1="-35" y1="10" x2="-35" y2="-25" stroke="#FDE047" stroke-width="2" />
+    <line x1="65" y1="10" x2="65" y2="-25" stroke="#FDE047" stroke-width="2" />
+    <!-- Pilgrims on Boat with hands raised -->
+    <circle cx="-10" cy="2" r="6" fill="#1C1917" />
+    <circle cx="20" cy="0" r="6" fill="#1C1917" />
+  </g>
+
+  <!-- Secondary Boats in Distance -->
+  <g transform="translate(820, 410) scale(0.65)">
+    <path d="M -90 30 Q 0 55 120 30 L 105 10 L -75 10 Z" fill="#78350F" />
+    <polygon points="-50,10 80,10 65,-25 -35,-25" fill="#DC2626" />
+  </g>
+  <g transform="translate(260, 430) scale(0.65)">
+    <path d="M -90 30 Q 0 55 120 30 L 105 10 L -75 10 Z" fill="#78350F" />
+    <polygon points="-50,10 80,10 65,-25 -35,-25" fill="#F59E0B" />
+  </g>
+
+  <!-- Flock of Migratory Siberian Seagulls Flying over Sangam -->
+  <g stroke="#FFFFFF" stroke-width="2.5" fill="none">
+    <path d="M 450 210 Q 465 195 480 210 Q 495 195 510 210" />
+    <path d="M 520 230 Q 532 218 544 230 Q 556 218 568 230" />
+    <path d="M 590 190 Q 608 172 626 190 Q 644 172 662 190" />
+    <path d="M 680 220 Q 692 208 704 220 Q 716 208 728 220" />
+    <path d="M 740 250 Q 750 240 760 250 Q 770 240 780 250" />
+  </g>
+
+  <!-- Title Banner -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="460" height="42" rx="6" fill="#821B25" opacity="0.95" />
+    <rect x="2" y="2" width="456" height="38" rx="4" fill="none" stroke="#C69A52" stroke-width="1.2" />
+    <text x="230" y="26" font-family="'Cinzel', Georgia, serif" font-size="16" font-weight="700" fill="#FFF9F0" text-anchor="middle" letter-spacing="2">
+      PRAYAGRAJ TRIVENI SANGAM DARSHAN
+    </text>
+  </g>
+</svg>

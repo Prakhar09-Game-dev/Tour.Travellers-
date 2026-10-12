@@ -1,0 +1,8 @@
+{
+  "name": "Remix Ujjawal Tour & Travels",
+  "description": "Premier Varanasi car rental, local taxi, pilgrimage packages, outstation tours, and verified trip fare calculator based in Lanka, Varanasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
